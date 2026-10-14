@@ -1,45 +1,99 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Úsuario</title>
-    <link rel="stylesheet" href="css/estilo.css">
+    <title>Dashbord</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;   
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header{
+            background-color: lightblue;
+            display: flex;
+            justify-content: flex-start;
+            gap: 20px;
+            align-items: center;
+            padding: 15px 30px ; 
+        }
+        nav{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        nav ul{
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            gap: 15px;
+        }
+        nav li{
+            margin-right: 15px;
+        }
+        .button{
+            display: inline block;
+            text-decoration: none;
+            background-color: red;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-family: sans-serif;
+            transition:all 0.2s
+        }
+        .button:hover{
+            background-color: rgb(206, 0, 0);
+        }
+        header img{
+            width: 150px;
+            float: left;
+            padding-right: 1rem;
+        }
+        main{
+            flex: 1;
+            background-color: aqua;
+            padding: 50px;
+        }
+        footer{
+            background-color: limegreen;
+            padding: 50px;
+            
+        }
+    </style>
 </head>
-
 <body>
     <header>
+        <img src="img/Ícone de Controle em Nuvem.png" alt="Logo">
+        <h1>Locadora <br> Silva</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Menu</a></li>
-                <li><a href="dashboard.html">Usuario</a></li>
-                <li><a href="produtos.html">Produtos</a>
-                    <ul>
-                        <li>Jario 64</li>
-                        <li>Mega Ninja</li>
-                        <li>Digital Bandicoot</li>
-                        <li>Bomber Twister</li>
-                        <li>Kong Plus</li>
-                    </ul>
-                </li>
-                <li><a href="contato.html">Contatos</a></li>
-                <li><a href="sobre.html">sobre</a></li>
-                <li class="linklogin"><a href="login.html">Login</a></li>
+                <li><a href="index.html" class="button">Loja</a></li>
+                <li><a href="#" class="button">alugados</a></li>
+                <li><a href="produtos.html" class="button">catalogo</a></li>
             </ul>
+            <form action="" method="get">
+                <input type="search" name="barra de pesquisa" placeholder="pesquisa">
+                <button type="submit">buscar</button>
+            </form>
         </nav>
-    </header>    
-    <h1>Informação de Úsuario</h1>
-    <ul>
-        <li><label for="nome">Nome: </label>João Gabriel</li>
-        <li><label for="cpf">Cpf: </label>123.098.765.45</li>
-        <li><label for="email">E-mail: </label>joaoaraujo@gmail.com</li>
-    </ul>
-    <footer>
-        <p>
-            © 2026 Locadora Silva
-        </p>
-    </footer>
-</body>
+    </header>
 
+    <main>
+        <h1>aqui</h1>
+        <p>aqui tbm</p>
+    </main>
+
+    <footer>
+        <h1>aqui</h1>
+    </footer>
+
+</body>
 </html>
